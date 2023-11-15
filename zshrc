@@ -16,3 +16,8 @@ alias gbdm='git branch --merged | egrep -v "(^\*|master|main)" | xargs git branc
 function gfc {
   git fetch origin $1:$1 && git checkout $1
 }
+
+
+alias ds='du -sh'
+alias cf='find . -type f | wc -l'
+
