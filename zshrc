@@ -13,7 +13,7 @@ alias gcai='gca -m "."'
 alias grst='git reset'
 alias gph='gp -u origin HEAD'
 alias gbdm='git branch --merged | egrep -v "(^\*|master|main)" | xargs git branch -D'
-alias glod='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date=human'
+alias glod='git log --graph --pretty="%C(auto)%h%Creset%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date=human'
 function gfc {
   git fetch origin $1:$1 && git checkout $1
 }
